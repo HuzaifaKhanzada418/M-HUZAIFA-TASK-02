@@ -1,0 +1,279 @@
+                      /*   GRID LAYOUT   */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#467599;
+    color:#333;
+}
+
+header{
+    width:100%;
+    background:#1D3354;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    height:80px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    color:#5b8183;
+    font-size:30px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#f9f8f8;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.active{
+    color:#5b8183;
+}
+
+.btn{
+    text-decoration:none;
+    background:#5b8183;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#405c5e;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#080808;
+    max-width:650px;
+    margin:auto;
+}
+.pricing{
+
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#9ED8DB;
+
+    padding:40px 30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h2{
+
+    color:#5b8183;
+
+    margin-bottom:20px;
+
+}
+
+.card h1{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.card span{
+
+    font-size:18px;
+
+    color:#777;
+
+}
+
+.card ul{
+
+    list-style:none;
+
+    text-align:left;
+
+}
+
+.card li{
+
+    margin:18px 0;
+
+}
+
+.card i{
+
+    color:#5b8183;
+
+    margin-right:8px;
+
+}
+
+.card button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#5b8183;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#405c5e;
+
+}
+
+
+
+.featured{
+
+    border:4px solid #405c5e;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:-15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#5b8183;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+
+
+
+footer{
+
+    margin-top:70px;
+
+    padding:25px;
+
+    text-align:center;
+
+    background:#111827;
+
+    color:#fff;
+
+}
+
+@media(max-width:600px){
+
+.navbar{
+
+
+    flex-direction:row;
+
+    height:auto;
+
+    padding:20px 0;
+
+}
+
+.nav-links{
+
+    font-size: 12px;
+
+    flex-direction:row;
+
+    margin:20px 0;
+
+    gap:8px;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+    padding: 10px 20px;
+
+}
+
+.pricing{
+
+    grid-template-columns:1fr;
+
+}
+
+}
